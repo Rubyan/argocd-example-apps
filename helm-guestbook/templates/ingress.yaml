@@ -1,7 +1,7 @@
 apiVersion: gatemin.io/v1alpha1
 kind: IngressGate
 metadata:
-  name: helm-guestbook
+  name: {{ template "helm-guestbook.fullname" . }}
 spec:
     host: guestbook.apps.ocp-prd.alliander.com
     auth:
