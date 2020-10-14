@@ -3,7 +3,7 @@ kind: IngressGate
 metadata:
   name: {{ template "helm-guestbook.fullname" . }}
 spec:
-    host: guestbook.apps.ocp-prd.alliander.com
+    host: helm-guestbook.apps.ocp-prd.alliander.com
     auth:
       type: NONE
     services:
